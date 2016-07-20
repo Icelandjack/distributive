@@ -41,6 +41,12 @@ flag tagged
     .
     Disabling this is an unsupported configuration, but it may be useful for accelerating builds in sandboxes for expert users.
 
+custom-setup
+  setup-depends:
+    base                >= 4    && < 5,
+    Cabal               >= 1.24 && < 1.27,
+    filepath            >= 1.2
+
 library
   build-depends:
     base                >= 4   && < 5,
